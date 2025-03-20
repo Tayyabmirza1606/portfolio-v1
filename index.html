@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="./Images/Profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a Senior SQA Engineer with expertise in manual, automation, and performance testing.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                "I am a Senior Software Quality Assurance Engineer with 6+ years of experience in software testing. My expertise lies in manual, automation, performance, and API testing, ensuring high-quality software releases.
+
+Throughout my career, I have worked on multiple projects across web and mobile applications, specializing in:
+
+✔ Test Automation: Developing test automation frameworks using Selenium, Cypress, and Playwright.
+✔ Performance Testing: Utilizing JMeter and LoadRunner to ensure application scalability.
+✔ API Testing: Using Postman and REST Assured for efficient backend validation.
+✔ Manual & Functional Testing: Ensuring a seamless user experience through exploratory and regression testing.
+
+I have experience collaborating with cross-functional teams, including developers, product managers, and business analysts, to create efficient, bug-free software. My goal is to enhance the software development process by identifying issues early and improving overall application reliability.
+
+💡 Tech Stack:
+🔹 Selenium | Cypress | Playwright | Postman | JMeter
+🔹 JavaScript | Python | Java
+🔹 Jira | TestRail | Git | CI/CD
+
+In my free time, I love exploring new testing tools, staying updated with latest QA trends, and sharing my knowledge through mentorship and blog writing. I’m passionate about building robust test automation solutions that help teams deliver high-quality software faster!"
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Doctor Prescription Portal</h3>
+                <p>A web application that enables doctors to prescribe medicine digitally and pharmacists to dispense it.</p>
+            </div>
+            <div class="project">
+                <h3>Automation Test Suite</h3>
+                <p>Developed an automated testing framework for web applications using Selenium and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:tayyabmirza1606@gmail.com">tayyabmirza1606@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-tayyab-890822224/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;">
+                LinkedIn Profile
+            </a></p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
