@@ -3,100 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Muhammad Tayyab - SQA Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">My Portfolio</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+    <header>
+        <nav>
+            <ul>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="hero">
         <div class="hero-content">
-            <img src="./Images/Profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a Senior SQA Engineer with expertise in manual, automation, and performance testing.</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <img src="Images/profile.jpg" alt="Muhammad Tayyab" class="profile-img">
+            <h1>Muhammad Tayyab</h1>
+            <p>Senior SQA Engineer | Manual | Automation | Performance | API Testing</p>
+            <a href="https://www.linkedin.com/in/muhammad-tayyab-890822224/" target="_blank" class="profile-btn">View Profile</a>
         </div>
     </section>
 
     <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                "I am a Senior Software Quality Assurance Engineer with 6+ years of experience in software testing. My expertise lies in manual, automation, performance, and API testing, ensuring high-quality software releases.
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a <strong>Senior SQA Engineer</strong> with <strong>6+ years of experience</strong> in software quality assurance.  
+        </p>
+        <p
+            My expertise includes <strong>manual, automation, API, and performance testing</strong>. I specialize in:
+        </p>
+        <ul>
+            <li>🔹 Writing & executing comprehensive <strong>test cases & test plans</strong>.</li>
+            <li>🔹 <strong>Automation Testing</strong> using <strong>Selenium, Cypress, Playwright</strong>.</li>
+            <li>🔹 <strong>Performance Testing</strong> with <strong>JMeter & LoadRunner</strong>.</li>
+            <li>🔹 <strong>API Testing</strong> with <strong>Postman & RestAssured</strong>.</li>
+            <li>🔹 Working in <strong>Agile & Scrum environments</strong>.</li>
+            <li>🔹 <strong>Bug tracking & reporting</strong> using <strong>JIRA & Bugzilla</strong>.</li>
+            <li>🔹 <strong>Database testing</strong> with <strong>SQL & PostgreSQL</strong>.</li>
+        </ul>
+    </section>
 
-Throughout my career, I have worked on multiple projects across web and mobile applications, specializing in:
-
-✔ Test Automation: Developing test automation frameworks using Selenium, Cypress, and Playwright.
-✔ Performance Testing: Utilizing JMeter and LoadRunner to ensure application scalability.
-✔ API Testing: Using Postman and REST Assured for efficient backend validation.
-✔ Manual & Functional Testing: Ensuring a seamless user experience through exploratory and regression testing.
-
-I have experience collaborating with cross-functional teams, including developers, product managers, and business analysts, to create efficient, bug-free software. My goal is to enhance the software development process by identifying issues early and improving overall application reliability.
-
-💡 Tech Stack:
-🔹 Selenium | Cypress | Playwright | Postman | JMeter
-🔹 JavaScript | Python | Java
-🔹 Jira | TestRail | Git | CI/CD
-
-In my free time, I love exploring new testing tools, staying updated with latest QA trends, and sharing my knowledge through mentorship and blog writing. I’m passionate about building robust test automation solutions that help teams deliver high-quality software faster!"
-            </p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li>✅ Manual & Automation Testing</li>
+            <li>✅ Performance Testing (JMeter, LoadRunner)</li>
+            <li>✅ API Testing (Postman, RestAssured)</li>
+            <li>✅ Test Automation (Selenium, Cypress, Playwright)</li>
+            <li>✅ Test Case Design & Execution</li>
+            <li>✅ Bug Tracking & Reporting (JIRA, Bugzilla)</li>
+            <li>✅ Agile & Scrum Methodologies</li>
+            <li>✅ Database Testing (SQL, PostgreSQL)</li>
+        </ul>
+        <div class="about-stats">
+            <div class="stat">
+                <h3>100+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat">
+                <h3>7+</h3>
+                <p>Years of Experience</p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
             <div class="project">
-                <h3>Doctor Prescription Portal</h3>
-                <p>A web application that enables doctors to prescribe medicine digitally and pharmacists to dispense it.</p>
+                <img src="Images/lexim.webp" alt="Lexim Project">
+                <h3>Lexim Project</h3>
+                <p>An AI-powered legal platform ensuring efficiency and accuracy in legal work.</p>
+                <a href="https://www.app.lexim.gold/" target="_blank" class="btn">View Project</a>
             </div>
             <div class="project">
-                <h3>Automation Test Suite</h3>
-                <p>Developed an automated testing framework for web applications using Selenium and JavaScript.</p>
+                <img src="Images/gmonad.jpg" alt="GMonAD Project">
+                <h3>GMonAD Project</h3>
+                <p>A blockchain-based game where users spin a wheel to win virtual lottery cards.</p>
+                <a href="https://gmonad.daucards.com/" target="_blank" class="btn">View Project</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:tayyabmirza1606@gmail.com">tayyabmirza1606@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-tayyab-890822224/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;">
-                LinkedIn Profile
-            </a></p>
-        </div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to connect, feel free to reach out!</p>
+        <form action="https://formsubmit.co/your.email@example.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
 
-    <script>
-        // Smooth scrolling for nav links
-        document.querySelectorAll('.nav-links a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                window.scrollTo({
-                    top: targetElement.offsetTop - 70,
-                    behavior: "smooth"
-                });
-            });
-        });
-    </script>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Muhammad Tayyab. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

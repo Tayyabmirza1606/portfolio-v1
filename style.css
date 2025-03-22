@@ -1,129 +1,264 @@
-/* Global Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
     scroll-behavior: smooth;
 }
 
-/* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #111;
-    padding: 15px 0;
-    text-align: center;
-    z-index: 1000;
-}
-
+/* Centering Utility */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.nav-links {
+/* Navbar */
+header {
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-.nav-links li {
+nav ul li {
     display: inline;
     margin: 0 15px;
 }
 
-.nav-links a {
-    color: #ddd;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #0f0;
+nav ul li a:hover {
+    color: #f39c12;
 }
 
 /* Hero Section */
-.hero {
-    background: url('your-image.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 80px;
+#hero {
+    text-align: center;
+    padding: 120px 20px 80px;
 }
 
-.profile-pic {
-    width: 150px;
+.profile-img {
+    width: 130px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #0f0;
-    margin-bottom: 20px;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
 }
 
-.hero-content {
+.profile-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0077b5; /* LinkedIn Blue */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.profile-btn:hover {
+    background: #005582;
+}
+
+/* About Me Section */
+
+#about, #skills, #projects, #contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+#about {
+    padding: 60px 20px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Key Skills */
+#skills {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.hero h1 {
-    font-size: 3em;
-    color: #0f0;
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
 }
 
-.hero p {
+/* Stats */
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat {
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
     font-size: 1.2em;
-    color: #ddd;
+    font-weight: bold;
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat h3 {
+    color: #ffcc00;
+    margin: 0;
+}
+
+/* Projects */
+#projects {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
 }
 
 .btn {
     display: inline-block;
+    margin-top: 10px;
     padding: 10px 20px;
-    background: #0f0;
-    color: #000;
+    background: #f39c12;
+    color: white;
     text-decoration: none;
-    margin-top: 20px;
+    font-weight: bold;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #0c0;
-}
-
-/* Sections */
-section {
-    padding: 80px 20px;
-    min-height: 100vh;
-}
-
-/* About, Projects, and Contact */
-.about, .projects, .contact {
-    background-color: #111;
-    color: #fff;
-}
-
-/* Project Cards */
-.project {
-    background: #222;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-.project h3 {
-    color: #0f0;
+    background: #d48806;
 }
 
 /* Contact Section */
-.contact a {
-    color: #0f0;
-    text-decoration: none;
+#contact {
+    background: #121212;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-.contact a:hover {
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ffaa00;
+}
+
+#contact a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    margin-top: 20px;
+    font-size: 1.1em;
 }
